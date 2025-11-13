@@ -1,0 +1,22 @@
+languageCode = 'en-us'
+baseURL = "https://blog.likeshumidity.com/"
+title = "likesHumdity Blog"
+theme = "PaperMod"
+
+[params]
+  # This is for the PaperMod theme
+  defaultTheme = "auto" # auto, dark, light
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
