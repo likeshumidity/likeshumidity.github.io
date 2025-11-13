@@ -112,92 +112,13 @@ To manage this complex data ingestion and modeling process, a clear data archite
 #### Table 1: Electoral Targeting Engine - Master Data Schema
 
 
-<table>
-  <tr>
-   <td><strong>Data Domain</strong>
-   </td>
-   <td><strong>Primary Source(s)</strong>
-   </td>
-   <td><strong>Key Data Fields</strong>
-   </td>
-   <td><strong>API/Access Method</strong>
-   </td>
-   <td><strong>Update Frequency</strong>
-   </td>
-   <td><strong>Integration Key (OMI)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Office Roster</strong>
-   </td>
-   <td>Google Civic API <sup>35</sup>, Local Scrapers, Harvard Database <sup>33</sup>
-   </td>
-   <td>office_name, level (Fed/State/Local), district, incumbent_name
-   </td>
-   <td>REST API, Python Scraper
-   </td>
-   <td>As-needed (post-redistricting)
-   </td>
-   <td>OMI-ID (Primary)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Election Results</strong>
-   </td>
-   <td>VEST <sup>43</sup>, State/County Sites <sup>40</sup>
-   </td>
-   <td>precinct_id, votes_cast, candidate, margin, election_date
-   </td>
-   <td>Bulk SHP/CSV
-   </td>
-   <td>Biennial
-   </td>
-   <td>OMI-ID
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Incumbent Finances</strong>
-   </td>
-   <td>OpenSecrets.org [Query]
-   </td>
-   <td>incumbent_name, FEC_ID, donor_name, amount, industry_code
-   </td>
-   <td>API, Bulk CSV
-   </td>
-   <td>Real-time (Quarterly)
-   </td>
-   <td>OMI-ID
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Incumbent Policy</strong>
-   </td>
-   <td>Ballotpedia <sup>42</sup>, ProQuest Congressional <sup>42</sup>
-   </td>
-   <td>incumbent_name, bill_id, vote_position, co-sponsorships
-   </td>
-   <td>API, Scraper
-   </td>
-   <td>Real-time
-   </td>
-   <td>OMI-ID
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Voter Data</strong>
-   </td>
-   <td>EAC EAVS <sup>52</sup>, US Elections Project <sup>51</sup>, US Census <sup>55</sup>
-   </td>
-   <td>precinct_id, turnout_VEP, registered_voters, rejected_ballots, demo_data
-   </td>
-   <td>Bulk CSV
-   </td>
-   <td>Biennial (EAVS)
-   </td>
-   <td>OMI-ID
-   </td>
-  </tr>
-</table>
+| Data Domain | Primary Source(s) | Key Data Fields | API/Access Method | Update Frequency | Integration Key (OMI) |
+| :---------- | :---------------- | :-------------- | :---------------- | :--------------- | :-------------------- |
+| **Office Roster** | Google Civic API <sup>35</sup>, Local Scrapers, Harvard Database <sup>33</sup> | office_name, level (Fed/State/Local), district, incumbent_name | REST API, Python Scraper | As-needed (post-redistricting) | OMI-ID (Primary) |
+| **Election Results** | VEST <sup>43</sup>, State/County Sites <sup>40</sup> | precinct_id, votes_cast, candidate, margin, election_date | Bulk SHP/CSV | Biennial | OMI-ID |
+| **Incumbent Finances** | OpenSecrets.org [Query] | incumbent_name, FEC_ID, donor_name, amount, industry_code | API, Bulk CSV | Real-time (Quarterly) | OMI-ID |
+| **Incumbent Policy** | Ballotpedia <sup>42</sup>, ProQuest Congressional <sup>42</sup> | incumbent_name, bill_id, vote_position, co-sponsorships | API, Scraper | Real-time | OMI-ID |
+| **Voter Data** | EAC EAVS <sup>52</sup>, US Elections Project <sup>51</sup>, US Census <sup>55</sup> | precinct_id, turnout_VEP, registered_voters, rejected_ballots, demo_data | Bulk CSV | Biennial (EAVS) | OMI-ID |
 
 
 
@@ -356,92 +277,13 @@ This hybrid <sup>87</sup> model perfectly executes the user's mandate. It is **m
 #### Table 2: Comparative Analysis of Governance Models
 
 
-<table>
-  <tr>
-   <td><strong>Governance Model</strong>
-   </td>
-   <td><strong>Addresses "Involvement" [Query]</strong>
-   </td>
-   <td><strong>Addresses "Effect" [Query]</strong>
-   </td>
-   <td><strong>Scalability</strong>
-   </td>
-   <td><strong>Resists Tyranny of Majority</strong>
-   </td>
-   <td><strong>Resists Plutocracy/Capture</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>1-Person-1-Vote (Majority Rule)</strong>
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-   <td>High
-   </td>
-   <td>No
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Liquid Democracy</strong> <sup>96</sup>
-   </td>
-   <td>Partially (by delegation)
-   </td>
-   <td>Partially (by delegation)
-   </td>
-   <td>Medium (suffers from low participation <sup>98</sup>)
-   </td>
-   <td>Partially
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Reputation-Based (Colony)</strong> <sup>89</sup>
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>Medium
-   </td>
-   <td>Partially
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Quadratic Voting (QV)</strong> <sup>9</sup>
-   </td>
-   <td>No
-   </td>
-   <td>Yes
-   </td>
-   <td>High
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes (partially; assumes equal credit distribution)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Proposed Hybrid Model (Reputation-QV)</strong>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>Medium</strong>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-  </tr>
-</table>
+| Governance Model | Addresses "Involvement" [Query] | Addresses "Effect" [Query] | Scalability | Resists Tyranny of Majority | Resists Plutocracy/Capture |
+| :--------------- | :------------------------------ | :------------------------- | :---------- | :-------------------------- | :------------------------- |
+| **1-Person-1-Vote (Majority Rule)** | No | No | High | No | Yes |
+| **Liquid Democracy** <sup>96</sup> | Partially (by delegation) | Partially (by delegation) | Medium (suffers from low participation <sup>98</sup>) | Partially | Yes |
+| **Reputation-Based (Colony)** <sup>89</sup> | Yes | No | Medium | Partially | Yes |
+| **Quadratic Voting (QV)** <sup>9</sup> | No | Yes | High | Yes | Yes (partially; assumes equal credit distribution) |
+| **Proposed Hybrid Model (Reputation-QV)** | **Yes** | **Yes** | **Medium** | **Yes** | **Yes** |
 
 
 
@@ -558,116 +400,16 @@ This three-tiered matrix is the party's master strategic plan, translating the "
 #### Table 3: 50-State Strategic Matrix (Illustrative)
 
 
-<table>
-  <tr>
-   <td><strong>State</strong>
-   </td>
-   <td><strong>New Party Ballot Access Difficulty</strong>
-   </td>
-   <td><strong>Fusion Voting Status</strong>
-   </td>
-   <td><strong>Avg. V-Score (Local) [II.C]</strong>
-   </td>
-   <td><strong>Recommended Strategy</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Alabama</strong>
-   </td>
-   <td>Hard (20% vote threshold <sup>141</sup>)
-   </td>
-   <td>Banned
-   </td>
-   <td>Medium
-   </td>
-   <td><strong>Tier 3: Local-Only</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>California</strong>
-   </td>
-   <td>Medium (Voter registration % <sup>142</sup>)
-   </td>
-   <td>Banned
-   </td>
-   <td>High
-   </td>
-   <td><strong>Tier 3: Local-Only</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Connecticut</strong>
-   </td>
-   <td>Medium
-   </td>
-   <td><strong>Legal (Full Fusion)</strong> <sup>150</sup>
-   </td>
-   <td>High
-   </td>
-   <td><strong>Tier 1: Fusion</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>New Jersey</strong>
-   </td>
-   <td>Medium
-   </td>
-   <td><strong>Banned (Challenged)</strong> <sup>153</sup>
-   </td>
-   <td>High
-   </td>
-   <td><strong>Tier 2: Legal + Tier 3</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>New York</strong>
-   </td>
-   <td>Medium
-   </td>
-   <td><strong>Legal (Full Fusion)</strong> <sup>150</sup>
-   </td>
-   <td>High
-   </td>
-   <td><strong>Tier 1: Fusion</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Oregon</strong>
-   </td>
-   <td>Medium
-   </td>
-   <td><strong>Legal (Aggregated)</strong> <sup>150</sup>
-   </td>
-   <td>High
-   </td>
-   <td><strong>Tier 1: Fusion</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Texas</strong>
-   </td>
-   <td>Hard (Petitioning hurdles <sup>102</sup>)
-   </td>
-   <td>Banned
-   </td>
-   <td>High
-   </td>
-   <td><strong>Tier 3: Local-Only</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Vermont</strong>
-   </td>
-   <td>Easy
-   </td>
-   <td><strong>Legal (Aggregated)</strong> <sup>150</sup>
-   </td>
-   <td>Medium
-   </td>
-   <td><strong>Tier 1: Fusion</strong>
-   </td>
-  </tr>
-</table>
+| State | New Party Ballot Access Difficulty | Fusion Voting Status | Avg. V-Score (Local) [II.C] | Recommended Strategy |
+| :------ | :--------------------------------- | :------------------- | :-------------------------- | :------------------- |
+| **Alabama** | Hard (20% vote threshold <sup>141</sup>) | Banned | Medium | **Tier 3: Local-Only** |
+| **California** | Medium (Voter registration % <sup>142</sup>) | Banned | High | **Tier 3: Local-Only** |
+| **Connecticut** | Medium | **Legal (Full Fusion)** <sup>150</sup> | High | **Tier 1: Fusion** |
+| **New Jersey** | Medium | **Banned (Challenged)** <sup>153</sup> | High | **Tier 2: Legal + Tier 3** |
+| **New York** | Medium | **Legal (Full Fusion)** <sup>150</sup> | High | **Tier 1: Fusion** |
+| **Oregon** | Medium | **Legal (Aggregated)** <sup>150</sup> | High | **Tier 1: Fusion** |
+| **Texas** | Hard (Petitioning hurdles <sup>102</sup>) | Banned | High | **Tier 3: Local-Only** |
+| **Vermont** | Easy | **Legal (Aggregated)** <sup>150</sup> | Medium | **Tier 1: Fusion** |
 
 
 
@@ -686,6 +428,7 @@ The party's competitive advantage is not ideological purity, but structural supe
 The operational playbook (Pillar V) provides a data-driven, tiered strategy for scaling. It abandons the "one-size-fits-all" approach of traditional third parties and instead adopts a **Three-Tiered State-Level Strategy**. This matrix dictates whether to pursue an immediate **Fusion** strategy (in states like New York <sup>150</sup>), a **Legal** challenge (in states like New Jersey <sup>153</sup>), or a long-term **Local-Only Insurgency** (in all other states).
 
 By integrating these data, feedback, and governance systems, the "Autonomous Party" can execute its "Win First" [Query] mandate, building a decentralized, transparent, and genuinely responsive political organization for the 21st century.
+
 
 
 #### Works cited

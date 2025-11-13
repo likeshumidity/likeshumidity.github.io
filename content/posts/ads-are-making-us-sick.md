@@ -13,7 +13,7 @@ title = 'Ads Are Making US Sick'
 
 ### Section 1.1: The Sickness: A Social Determinant of Health
 
-The pervasive critique that television and other media are "unhealthy" often mistakes the medium for the message. Media formats, in themselves, can be powerful tools for education, connection, and well-being.<sup>1</sup> The central thesis of this report is that the *economic model* underpinning this media—a system funded by persuasive advertising—is a primary vector for public unhealth. This system does not merely correlate with poor health outcomes; it actively perpetuates them.
+The pervasive critique that television and other media are "unhealthy" often mistakes the medium for the message. Media formats, in themselves, can be powerful tools for education, connection, and well-being.^[1] The central thesis of this report is that the *economic model* underpinning this media—a system funded by persuasive advertising—is a primary vector for public unhealth. This system does not merely correlate with poor health outcomes; it actively perpetuates them.
 
 Public health research provides a rigorous framework for this analysis, recasting "Harmful Marketing" as a causal "social determinant of health".<sup>2</sup> This places the impacts of advertising on par with other systemic vectors of illness, such as poverty, environmental pollutants, or lack of education. This framework moves the discussion beyond individual choice and into the realm of systemic, population-level harm.
 
@@ -149,92 +149,13 @@ This $422 billion figure is not "economic activity" in a vacuum. It is, in effec
 ***Table 1: U.S. Advertising Expenditure vs. GDP, 2024-2025***
 
 
-<table>
-  <tr>
-   <td><strong>Metric</strong>
-   </td>
-   <td><strong>2024 Spend (USD)</strong>
-   </td>
-   <td><strong>2025 Forecasted Spend (USD)</strong>
-   </td>
-   <td><strong>Pct. of 2025 Total Ad Spend</strong>
-   </td>
-   <td><strong>Pct. of U.S. GDP</strong>
-   </td>
-   <td><strong>Source(s)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Total Media Ad Spend</strong>
-   </td>
-   <td>$380 Billion
-   </td>
-   <td>$422 Billion
-   </td>
-   <td>100%
-   </td>
-   <td>~1.5%
-   </td>
-   <td><sup>15</sup>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Total Digital Ad Spend</strong>
-   </td>
-   <td>$259 Billion
-   </td>
-   <td>$324.9 Billion
-   </td>
-   <td>~77%
-   </td>
-   <td>~1.16%
-   </td>
-   <td><sup>15</sup>
-   </td>
-  </tr>
-  <tr>
-   <td>Social Media Ad Spend
-   </td>
-   <td>N/A
-   </td>
-   <td>(Est. >$80 Billion)
-   </td>
-   <td>N/A
-   </td>
-   <td>N/A
-   </td>
-   <td><sup>51</sup>
-   </td>
-  </tr>
-  <tr>
-   <td>Digital Video Ad Spend
-   </td>
-   <td>$64 Billion
-   </td>
-   <td>$72 Billion
-   </td>
-   <td>~17%
-   </td>
-   <td>~0.26%
-   </td>
-   <td><sup>15</sup>
-   </td>
-  </tr>
-  <tr>
-   <td>Programmatic Ad Spend
-   </td>
-   <td>$134.8 Billion
-   </td>
-   <td>N/A
-   </td>
-   <td>N/A
-   </td>
-   <td>N/A
-   </td>
-   <td><sup>50</sup>
-   </td>
-  </tr>
-</table>
+| Metric | 2024 Spend (USD) | 2025 Forecasted Spend (USD) | Pct. of 2025 Total Ad Spend | Pct. of U.S. GDP | Source(s) |
+| :----- | :--------------- | :-------------------------- | :-------------------------- | :--------------- | :-------- |
+| **Total Media Ad Spend** | $380 Billion | $422 Billion | 100% | ~1.5% | <sup>15</sup> |
+| **Total Digital Ad Spend** | $259 Billion | $324.9 Billion | ~77% | ~1.16% | <sup>15</sup> |
+| Social Media Ad Spend | N/A | (Est. >$80 Billion) | N/A | N/A | <sup>51</sup> |
+| Digital Video Ad Spend | $64 Billion | $72 Billion | ~17% | ~0.26% | <sup>15</sup> |
+| Programmatic Ad Spend | $134.8 Billion | N/A | N/A | N/A | <sup>50</sup> |
 
 
 
@@ -276,78 +197,12 @@ Furthermore, the "Subscription No Ads" (SNA) model <sup>60</sup> being tested in
 ***Table 2: The National "Privacy Ransom": Estimated Annual Cost for an Ad-Free U.S. Household (2025)***
 
 
-<table>
-  <tr>
-   <td><strong>Service Category</strong>
-   </td>
-   <td><strong>Ad-Free Subscription Examples</strong>
-   </td>
-   <td><strong>Est. Monthly Cost / User</strong>
-   </td>
-   <td><strong>Est. Monthly Cost / Household</strong>
-   </td>
-   <td><strong>Est. Annual Cost / Household</strong>
-   </td>
-   <td><strong>Source(s)</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Video Streaming</strong>
-   </td>
-   <td>Netflix (Std.), Disney+ (Premium), Paramount+ (w/Showtime), Prime Video (Upgrade)
-   </td>
-   <td>N/A
-   </td>
-   <td>~$50.00
-   </td>
-   <td>$600.00
-   </td>
-   <td><sup>55</sup>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Social Media</strong>
-   </td>
-   <td>YouTube Premium, Meta "SNA" (EU Est.), X Premium (Reduced), TikTok (Est.)
-   </td>
-   <td>~$40.98
-   </td>
-   <td>~$76.22 (at 1.86 users/HH)
-   </td>
-   <td>$914.64
-   </td>
-   <td><sup>58</sup>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>TOTALS</strong>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td><strong>$126.22</strong>
-   </td>
-   <td><strong>$1,514.64</strong>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Total National Ransom</strong>
-   </td>
-   <td>($1,514.64 * 132.2M Households)
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td><strong>~$199.94 Billion</strong>
-   </td>
-   <td><sup>53</sup>
-   </td>
-  </tr>
-</table>
+| Service Category | Ad-Free Subscription Examples | Est. Monthly Cost / User | Est. Monthly Cost / Household | Est. Annual Cost / Household | Source(s) |
+| :--------------- | :---------------------------- | :----------------------- | :---------------------------- | :--------------------------- | :-------- |
+| **Video Streaming** | Netflix (Std.), Disney+ (Premium), Paramount+ (w/Showtime), Prime Video (Upgrade) | N/A | ~$50.00 | $600.00 | <sup>55</sup> |
+| **Social Media** | YouTube Premium, Meta "SNA" (EU Est.), X Premium (Reduced), TikTok (Est.) | ~$40.98 | ~$76.22 (at 1.86 users/HH) | $914.64 | <sup>58</sup> |
+| **TOTALS** | | | **$126.22** | **$1,514.64** | |
+| **Total National Ransom** | ($1,514.64 * 132.2M Households) | | | **~$199.94 Billion** | <sup>53</sup> |
 
 
 
@@ -434,6 +289,91 @@ The ad-based model only has such power because of the lack of alternatives.
 
 This is a public health crisis. The "unhealthy cycle" is not a personal failing; it is a political and economic architecture. It was built by a century of commercial choices, and it can only be dismantled by a new generation of democratic ones.
 
+
+## VI. Content Embedding Guide
+
+This guide provides instructions for embedding various types of content into your markdown posts.
+
+### Images
+
+To include images, use the standard Markdown image syntax:
+
+```markdown
+![Alt text for the image](/path/to/your/image.jpg "Optional title for the image")
+```
+
+For images with specific dimensions or other HTML attributes, you can use the `figure` shortcode (if available in your theme, like PaperMod):
+
+```html
+{{< figure src="/path/to/your/image.jpg" alt="Alt text" title="Image Title" width="800" height="450" >}}
+```
+
+### Mermaid Diagrams
+
+Mermaid allows you to create diagrams and visualizations using text and code. To embed a Mermaid diagram, use the `mermaid` shortcode:
+
+```html
+{{< mermaid >}}
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+{{< /mermaid >}}
+```
+
+### Embedded YouTube Videos
+
+To embed a YouTube video, use the `youtube` shortcode with the video ID:
+
+```html
+{{< youtube "VIDEO_ID" >}}
+```
+Replace `"VIDEO_ID"` with the actual ID from the YouTube URL (e.g., `dQw4w9WgXcQ` for `https://www.youtube.com/watch?v=dQw4w9WgXcQ`).
+
+### Links
+
+For standard hyperlinks, use Markdown link syntax:
+
+```markdown
+[Link Text](https://example.com "Optional Title")
+```
+
+For references, use footnotes or inline links as demonstrated throughout this document.
+
+### Embedded Metabase Public Dashboards
+
+To embed a Metabase public dashboard, you will typically use an `<iframe>` tag with the public share URL. Ensure your theme supports raw HTML or provides a shortcode for iframes.
+
+```html
+<iframe
+    src="YOUR_METABASE_PUBLIC_DASHBOARD_URL"
+    frameborder="0"
+    width="100%"
+    height="600"
+    allowtransparency
+></iframe>
+```
+Replace `YOUR_METABASE_PUBLIC_DASHBOARD_URL` with the actual public URL of your Metabase dashboard.
+
+### ObservabilityHQ Embeds
+
+For ObservabilityHQ embeds, you would typically receive an embed code (often an `<iframe>` or a `<script>` tag) from the ObservabilityHQ platform. Similar to Metabase, you'll need to ensure your theme supports raw HTML or provides a specific shortcode.
+
+```html
+<!-- Example for an iframe embed from ObservabilityHQ -->
+<iframe
+    src="YOUR_OBSERVABILITYHQ_EMBED_URL"
+    frameborder="0"
+    width="100%"
+    height="400"
+></iframe>
+
+<!-- Example for a script-based embed from ObservabilityHQ -->
+<div id="observabilityhq-widget"></div>
+<script src="YOUR_OBSERVABILITYHQ_SCRIPT_URL"></script>
+```
+Replace `YOUR_OBSERVABILITYHQ_EMBED_URL` and `YOUR_OBSERVABILITYHQ_SCRIPT_URL` with the actual embed code provided by ObservabilityHQ.
 
 #### Works cited
 

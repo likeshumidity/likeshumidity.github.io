@@ -73,6 +73,11 @@ The foundation of a viable new political entity rests on a clear and resonant co
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    mermaid.initialize({ startOnLoad: true });
+  });
 </script>
 </head>
 <body id="top">
@@ -196,7 +201,60 @@ The foundation of a viable new political entity rests on a clear and resonant co
 </ul>
 <p>To manage this complex data ingestion and modeling process, a clear data architecture is required.</p>
 <h4 id="table-1-electoral-targeting-engine---master-data-schema">Table 1: Electoral Targeting Engine - Master Data Schema<a hidden class="anchor" aria-hidden="true" href="#table-1-electoral-targeting-engine---master-data-schema">#</a></h4>
-<!-- raw HTML omitted -->
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Data Domain</th>
+          <th style="text-align: left">Primary Source(s)</th>
+          <th style="text-align: left">Key Data Fields</th>
+          <th style="text-align: left">API/Access Method</th>
+          <th style="text-align: left">Update Frequency</th>
+          <th style="text-align: left">Integration Key (OMI)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Office Roster</strong></td>
+          <td style="text-align: left">Google Civic API <!-- raw HTML omitted -->35<!-- raw HTML omitted -->, Local Scrapers, Harvard Database <!-- raw HTML omitted -->33<!-- raw HTML omitted --></td>
+          <td style="text-align: left">office_name, level (Fed/State/Local), district, incumbent_name</td>
+          <td style="text-align: left">REST API, Python Scraper</td>
+          <td style="text-align: left">As-needed (post-redistricting)</td>
+          <td style="text-align: left">OMI-ID (Primary)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Election Results</strong></td>
+          <td style="text-align: left">VEST <!-- raw HTML omitted -->43<!-- raw HTML omitted -->, State/County Sites <!-- raw HTML omitted -->40<!-- raw HTML omitted --></td>
+          <td style="text-align: left">precinct_id, votes_cast, candidate, margin, election_date</td>
+          <td style="text-align: left">Bulk SHP/CSV</td>
+          <td style="text-align: left">Biennial</td>
+          <td style="text-align: left">OMI-ID</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Incumbent Finances</strong></td>
+          <td style="text-align: left">OpenSecrets.org [Query]</td>
+          <td style="text-align: left">incumbent_name, FEC_ID, donor_name, amount, industry_code</td>
+          <td style="text-align: left">API, Bulk CSV</td>
+          <td style="text-align: left">Real-time (Quarterly)</td>
+          <td style="text-align: left">OMI-ID</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Incumbent Policy</strong></td>
+          <td style="text-align: left">Ballotpedia <!-- raw HTML omitted -->42<!-- raw HTML omitted -->, ProQuest Congressional <!-- raw HTML omitted -->42<!-- raw HTML omitted --></td>
+          <td style="text-align: left">incumbent_name, bill_id, vote_position, co-sponsorships</td>
+          <td style="text-align: left">API, Scraper</td>
+          <td style="text-align: left">Real-time</td>
+          <td style="text-align: left">OMI-ID</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Voter Data</strong></td>
+          <td style="text-align: left">EAC EAVS <!-- raw HTML omitted -->52<!-- raw HTML omitted -->, US Elections Project <!-- raw HTML omitted -->51<!-- raw HTML omitted -->, US Census <!-- raw HTML omitted -->55<!-- raw HTML omitted --></td>
+          <td style="text-align: left">precinct_id, turnout_VEP, registered_voters, rejected_ballots, demo_data</td>
+          <td style="text-align: left">Bulk CSV</td>
+          <td style="text-align: left">Biennial (EAVS)</td>
+          <td style="text-align: left">OMI-ID</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="d-executing-complex-network-cluster-analysis-visualizing-the-political-landscape">D. Executing Complex Network Cluster Analysis: Visualizing the Political Landscape<a hidden class="anchor" aria-hidden="true" href="#d-executing-complex-network-cluster-analysis-visualizing-the-political-landscape">#</a></h3>
 <p>The user&rsquo;s demand for &ldquo;Complex network cluster analysis&rdquo; [Query] is a sophisticated and critical component. This analysis will create the &ldquo;summary visualizations&rdquo; of the political landscape, moving beyond simple lists of donors to map the <em>relationships</em> between actors.<!-- raw HTML omitted -->58<!-- raw HTML omitted --></p>
 <p><strong>Methodology:</strong></p>
@@ -304,7 +362,60 @@ The foundation of a viable new political entity rests on a clear and resonant co
 </ol>
 <p>This hybrid <!-- raw HTML omitted -->87<!-- raw HTML omitted --> model perfectly executes the user&rsquo;s mandate. It is <strong>meritocratic</strong> (you must be <em>involved</em> to earn credits). It <strong>protects affected minorities</strong> (you can <em>concentrate</em> your earned credits on issues that <em>affect</em> you most). It is <strong>plutocracy-resistant</strong> (you cannot <em>buy</em> &ldquo;Reputation&rdquo; or &ldquo;Voice Credits&rdquo; with money).</p>
 <h4 id="table-2-comparative-analysis-of-governance-models">Table 2: Comparative Analysis of Governance Models<a hidden class="anchor" aria-hidden="true" href="#table-2-comparative-analysis-of-governance-models">#</a></h4>
-<!-- raw HTML omitted -->
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Governance Model</th>
+          <th style="text-align: left">Addresses &ldquo;Involvement&rdquo; [Query]</th>
+          <th style="text-align: left">Addresses &ldquo;Effect&rdquo; [Query]</th>
+          <th style="text-align: left">Scalability</th>
+          <th style="text-align: left">Resists Tyranny of Majority</th>
+          <th style="text-align: left">Resists Plutocracy/Capture</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>1-Person-1-Vote (Majority Rule)</strong></td>
+          <td style="text-align: left">No</td>
+          <td style="text-align: left">No</td>
+          <td style="text-align: left">High</td>
+          <td style="text-align: left">No</td>
+          <td style="text-align: left">Yes</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Liquid Democracy</strong> <!-- raw HTML omitted -->96<!-- raw HTML omitted --></td>
+          <td style="text-align: left">Partially (by delegation)</td>
+          <td style="text-align: left">Partially (by delegation)</td>
+          <td style="text-align: left">Medium (suffers from low participation <!-- raw HTML omitted -->98<!-- raw HTML omitted -->)</td>
+          <td style="text-align: left">Partially</td>
+          <td style="text-align: left">Yes</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Reputation-Based (Colony)</strong> <!-- raw HTML omitted -->89<!-- raw HTML omitted --></td>
+          <td style="text-align: left">Yes</td>
+          <td style="text-align: left">No</td>
+          <td style="text-align: left">Medium</td>
+          <td style="text-align: left">Partially</td>
+          <td style="text-align: left">Yes</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Quadratic Voting (QV)</strong> <!-- raw HTML omitted -->9<!-- raw HTML omitted --></td>
+          <td style="text-align: left">No</td>
+          <td style="text-align: left">Yes</td>
+          <td style="text-align: left">High</td>
+          <td style="text-align: left">Yes</td>
+          <td style="text-align: left">Yes (partially; assumes equal credit distribution)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Proposed Hybrid Model (Reputation-QV)</strong></td>
+          <td style="text-align: left"><strong>Yes</strong></td>
+          <td style="text-align: left"><strong>Yes</strong></td>
+          <td style="text-align: left"><strong>Medium</strong></td>
+          <td style="text-align: left"><strong>Yes</strong></td>
+          <td style="text-align: left"><strong>Yes</strong></td>
+      </tr>
+  </tbody>
+</table>
 <h2 id="v-the-operational-playbook-implementation-and-scaling">V. The Operational Playbook: Implementation and Scaling<a hidden class="anchor" aria-hidden="true" href="#v-the-operational-playbook-implementation-and-scaling">#</a></h2>
 <p>This section provides the &ldquo;clear playbook&rdquo; [Query] for translating the data (Pillar I), feedback (Pillar II), and governance (Pillar III) systems into a &ldquo;Win First&rdquo; [Query] campaign operation.</p>
 <h3 id="a-phase-1-candidate-recruitment-and-onboarding">A. Phase 1: Candidate Recruitment and Onboarding<a hidden class="anchor" aria-hidden="true" href="#a-phase-1-candidate-recruitment-and-onboarding">#</a></h3>
@@ -394,7 +505,75 @@ The foundation of a viable new political entity rests on a clear and resonant co
 </ul>
 <p>This three-tiered matrix is the party&rsquo;s master strategic plan, translating the &ldquo;Win First&rdquo; [Query] mandate into an executable, data-driven, and legally-aware national playbook.</p>
 <h4 id="table-3-50-state-strategic-matrix-illustrative">Table 3: 50-State Strategic Matrix (Illustrative)<a hidden class="anchor" aria-hidden="true" href="#table-3-50-state-strategic-matrix-illustrative">#</a></h4>
-<!-- raw HTML omitted -->
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">State</th>
+          <th style="text-align: left">New Party Ballot Access Difficulty</th>
+          <th style="text-align: left">Fusion Voting Status</th>
+          <th style="text-align: left">Avg. V-Score (Local) [II.C]</th>
+          <th style="text-align: left">Recommended Strategy</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Alabama</strong></td>
+          <td style="text-align: left">Hard (20% vote threshold <!-- raw HTML omitted -->141<!-- raw HTML omitted -->)</td>
+          <td style="text-align: left">Banned</td>
+          <td style="text-align: left">Medium</td>
+          <td style="text-align: left"><strong>Tier 3: Local-Only</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>California</strong></td>
+          <td style="text-align: left">Medium (Voter registration % <!-- raw HTML omitted -->142<!-- raw HTML omitted -->)</td>
+          <td style="text-align: left">Banned</td>
+          <td style="text-align: left">High</td>
+          <td style="text-align: left"><strong>Tier 3: Local-Only</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Connecticut</strong></td>
+          <td style="text-align: left">Medium</td>
+          <td style="text-align: left"><strong>Legal (Full Fusion)</strong> <!-- raw HTML omitted -->150<!-- raw HTML omitted --></td>
+          <td style="text-align: left">High</td>
+          <td style="text-align: left"><strong>Tier 1: Fusion</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>New Jersey</strong></td>
+          <td style="text-align: left">Medium</td>
+          <td style="text-align: left"><strong>Banned (Challenged)</strong> <!-- raw HTML omitted -->153<!-- raw HTML omitted --></td>
+          <td style="text-align: left">High</td>
+          <td style="text-align: left"><strong>Tier 2: Legal + Tier 3</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>New York</strong></td>
+          <td style="text-align: left">Medium</td>
+          <td style="text-align: left"><strong>Legal (Full Fusion)</strong> <!-- raw HTML omitted -->150<!-- raw HTML omitted --></td>
+          <td style="text-align: left">High</td>
+          <td style="text-align: left"><strong>Tier 1: Fusion</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Oregon</strong></td>
+          <td style="text-align: left">Medium</td>
+          <td style="text-align: left"><strong>Legal (Aggregated)</strong> <!-- raw HTML omitted -->150<!-- raw HTML omitted --></td>
+          <td style="text-align: left">High</td>
+          <td style="text-align: left"><strong>Tier 1: Fusion</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Texas</strong></td>
+          <td style="text-align: left">Hard (Petitioning hurdles <!-- raw HTML omitted -->102<!-- raw HTML omitted -->)</td>
+          <td style="text-align: left">Banned</td>
+          <td style="text-align: left">High</td>
+          <td style="text-align: left"><strong>Tier 3: Local-Only</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Vermont</strong></td>
+          <td style="text-align: left">Easy</td>
+          <td style="text-align: left"><strong>Legal (Aggregated)</strong> <!-- raw HTML omitted -->150<!-- raw HTML omitted --></td>
+          <td style="text-align: left">Medium</td>
+          <td style="text-align: left"><strong>Tier 1: Fusion</strong></td>
+      </tr>
+  </tbody>
+</table>
 <h2 id="vi-conclusion-and-recommendations">VI. Conclusion and Recommendations<a hidden class="anchor" aria-hidden="true" href="#vi-conclusion-and-recommendations">#</a></h2>
 <p>This playbook outlines a comprehensive, systems-based architecture for constructing a new, viable political party. Its foundation is the translation of the &ldquo;No Kinds&rdquo; <!-- raw HTML omitted -->1<!-- raw HTML omitted --> anti-authoritarian ethos into a set of interconnected, technology-driven systems.</p>
 <p>The party&rsquo;s competitive advantage is not ideological purity, but structural superiority. It is built on three pillars:</p>
