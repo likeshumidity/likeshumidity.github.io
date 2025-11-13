@@ -92,10 +92,18 @@ This is your repeatable process for each article.
     ```
     Then open `http://localhost:1313` in your browser. The `-D` flag builds draft posts.
 
-4.  **Finalize & Publish:**
+4.  **Edit & Review in GDocs (Optional):**
+    *   Copy the Markdown from your editor and paste it into a new Google Doc.
+    *   Use Google Docs for collaborative editing, commenting, and sharing.
+
+5.  **Convert Back to Markdown (If Applicable):**
+    *   Use the **"Docs to Markdown"** add-on in Google Docs or an external tool like **Pandoc** to convert the final content back to Markdown.
+    *   Paste the clean Markdown back into your `.md` file.
+
+6.  **Finalize & Publish:**
     When you are ready to publish, change `draft: true` to `draft: false` in the front matter (the `---` block) of your `.md` file.
 
-5.  **Push to GitHub:**
+7.  **Push to GitHub:**
     Commit your changes and push them to the `main` branch.
     ```bash
     git add .
